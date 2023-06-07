@@ -50,8 +50,6 @@ public class User {
                 ", status=" + status +
                 '}';
 
-
-
         }
 }
 
