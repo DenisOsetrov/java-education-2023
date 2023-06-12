@@ -28,7 +28,7 @@ public class Main {
         Tube tube = new Tube(8);
         instruments.add(tube);
 
-        // Правильнийваріант
+        // Правильний варіант
 //        List<Instrument> instrumentList = new ArrayList<>();
 //        instrumentList.add(new Guitar());
 //        instrumentList.add(new Drums());
