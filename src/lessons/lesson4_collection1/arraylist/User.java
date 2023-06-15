@@ -6,7 +6,7 @@ import java.util.Objects;
 // Побудуємо пустий конструктор, повний конструктор, геттери, сеттери, toString, equals.
 // З цього класу будуємо колекцію <ArrayList>, в ньому мають бути реалізовані всі вище методи!
 // Вони реалізовані в анотації @Data
-public class User {
+public class User implements Comparable<User> {
     private int id;
     private String name;
 
@@ -56,4 +56,10 @@ public class User {
         return Objects.hash(id, name);
     }
 
+    @Override
+    public int compareTo(User o) {
+        // return 0;                       // за дефолтом
+        return  this.getId() - o.getId();  // за id
+        // return  this.getName().compareTo(o.getName());  // за name!
     }
+}
