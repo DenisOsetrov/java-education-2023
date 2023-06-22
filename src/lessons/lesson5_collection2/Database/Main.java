@@ -11,9 +11,11 @@ import java.sql.ResultSet;
 // для java посилання mvnrepository на connector
 public class Main {
                 @SneakyThrows
+                // Під'єднання до бази:
                 public static void main(String[] args) {    // Alt+Enter на getConnection для підказок
                     Connection connection= DriverManager.getConnection("jdbc:mysql://owu.linkpc.net","osetrov77", "qwertyytrewq11");
 
+                    // Робота з базою даних (без доступу до неї)
 //                    CallableStatement callableStatement = connection.prepareCall("select  * from city where id > ? and name like ?");
 //                    callableStatement.setInt(1, 20);
 //                    callableStatement.setString(2, "Leiden");
