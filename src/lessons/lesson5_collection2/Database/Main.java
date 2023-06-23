@@ -15,24 +15,11 @@ public class Main {
                 public static void main(String[] args) {    // Alt+Enter на getConnection для підказок
                     Connection connection= DriverManager.getConnection("jdbc:mysql://owu.linkpc.net","osetrov77", "qwertyytrewq11");
 
-                    // Робота з базою даних (без доступу до неї)
-//                    CallableStatement callableStatement = connection.prepareCall("select  * from city where id > ? and name like ?");
-//                    callableStatement.setInt(1, 20);
-//                    callableStatement.setString(2, "Leiden");
-//                    ResultSet resultSet = callableStatement.executeQuery();
-//                    List<City> cityList = new ArrayList<>();
-//                    while (resultSet.next()) {
-//                        int id = resultSet.getInt(1);// id
-//                        String name = resultSet.getString("Name");
-//                        cityList.add(new City(id, name));
-
-//                    }
-//                    System.out.println(cityList);
                 connection.close();
                 }
         }
 
-// Робочий варіант - моє під'єднання!
+// Робочий варіант - моє під'єднання з базою октен!
 
             //import java.sql.Connection;
             //import java.sql.DriverManager;
