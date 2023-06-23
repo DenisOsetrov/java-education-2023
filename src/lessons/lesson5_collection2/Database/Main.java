@@ -32,7 +32,7 @@ public class Main {
                 }
         }
 
-// Робочий варіант!
+// Робочий варіант - моє під'єднання!
 
             //import java.sql.Connection;
             //import java.sql.DriverManager;
